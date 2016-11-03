@@ -1,14 +1,122 @@
-ul.menu {
-	margin: 0;
-	padding: 0;
-	li {
-		display: inline;
-		margin-right: 10px;
-		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	align-items:center;
+		p{
+			font-family: 'Dosis', sans-serif;
+			font-size: 1.45rem;
+			font-weight: 600;
+			color: black;
+				&:hover, &:focus{
+					color: #cccccc;
+				}
 		}
-	}
+		// .fa-bars, .fa-times{
+		// 	color: lightgrey;
+		// 	font-size: 20px;
+		// }
+}
+
+//nav toggle button
+.toggle_button {
+  position: fixed;
+  top: 50px;
+  right: 60px;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+  transition: .25s;
+  z-index: 15;
+}
+.toggle_button:hover, .toggle_button:focus,{
+  cursor: pointer;
+}
+.toggle_button .menu_bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  transition: .5s;
+}
+.toggle_button .menu_bar_top {
+  border: 4px solid #bbb;
+  border-bottom: none;
+  top: 0;
+}
+.toggle_button .menu_bar_middle {
+  height: 4px;
+  background-color: #bbb;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px;
+}
+.toggle_button .menu_bar_bottom {
+  border: 4px solid #bbb;
+  border-top: none;
+  top: 22px;
+}
+.button_open .menu_bar_top {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .5s;
+}
+.button_open .menu_bar_middle {
+  transform: translate(230px);
+  transition: .1s ease-in;
+  opacity: 0;
+}
+.button_open .menu_bar_bottom {
+  transform: rotate(-45deg) translate(8px, -7px);
+  transition: .5s;
+}
+//end of nav toggle button
+
+.menu_wrap {
+	background-color:white;
+	position: fixed;
+	top: 0;
+	right:-220px;
+	height: 100vh;
+	width: 220px;
+	font-size: 1rem;
+	overflow: auto;
+	transition: 0.3s all ease;
+	z-index: 10;
+}
+
+.menu_show {
+	right: 0;
+}
+.menu_hide{
+	margin-right: -220px;
+}
+
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+}
+
+.slideout-open,.slideout-open body,.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+ul{
+	padding-top: 120px;
+	background-color: white;
+		li{
+			font-family: 'Dosis', sans-serif;
+			font-size: 1rem;
+			padding: 10px 0;
+			text-align: center;
+		}
+}
+li a{
+	color: black;
+	font-size: 1.5rem;
+		&:hover, &:focus{
+			color: #ccc;
+		}
 }

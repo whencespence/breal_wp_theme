@@ -1,7 +1,14 @@
+</div>
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+	<div class="contact wrapper">
+		<p class="company"><?php the_field('company_name'); ?></p>
+		<p><?php the_field('email_address'); ?></p>
+		<p><?php the_field('phone_number'); ?></p>
+		<div class="copyright flex_container">
+			<i class="fa fa-copyright" aria-hidden="true"></i>
+			<p><?php the_field('copyright_info'); ?></p>
+		</div>
+	</div>
 </footer>
 
 <script>
@@ -12,7 +19,9 @@
  g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
+<script src="<?php bloginfo('template_url') ?>/js/slideout.min.js"></script>
 
 <?php wp_footer(); ?>
+
 </body>
 </html>

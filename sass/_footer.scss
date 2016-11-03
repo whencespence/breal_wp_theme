@@ -1,3 +1,44 @@
-footer {
-	clear: both;
+footer .contact{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+		p{
+			font-size: 0.8rem;
+			color: #888888;
+			padding: 3px 0;
+		}
 }
+.contact p.company{
+	color: black;
+	padding-top: 35px;
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+.contact::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 93px;
+	background-color: #eeeeee;
+	height: 2px;
+}
+
+
+.copyright {
+	padding-top: 35px;
+	align-items:center;
+		p{
+			font-size: 0.8rem;
+			color: #bbb;
+		}
+		i{
+			color: #cccccc;
+			padding-right: 5px;
+		}
+}
+
+

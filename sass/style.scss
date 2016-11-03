@@ -13,6 +13,7 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+@import 'front-page';
 /*
 ====================================
 Default Styling
@@ -24,9 +25,10 @@ img {
 }
 
 body {
-	color: #333;
+	height: 100%;
+	width: 100%;
+	transition: 0.2s all ease;
 }
-
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -41,11 +43,10 @@ body {
 .full {
 	width: 100%;
 }
-
-
-
-
-
-
-
-
+.flex_container {
+	display: flex;
+}
+.wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+}
