@@ -1,12 +1,12 @@
 </div>
 <footer>
 	<div class="contact wrapper">
-		<p class="company"><?php the_field('company_name'); ?></p>
-		<p><?php the_field('email_address'); ?></p>
-		<p><?php the_field('phone_number'); ?></p>
+		<p class="company"><?php the_field('company_name', 'option'); ?></p>
+		<p><?php the_field('email_address', 'option'); ?></p>
+		<p><?php the_field('phone_number', 'option'); ?></p>
 		<div class="copyright flex_container">
 			<i class="fa fa-copyright" aria-hidden="true"></i>
-			<p><?php the_field('copyright_info'); ?></p>
+			<p><?php the_field('copyright_info','option'); ?></p>
 		</div>
 	</div>
 </footer>
@@ -20,7 +20,7 @@
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 <script src="<?php bloginfo('template_url') ?>/js/slideout.min.js"></script>
-
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 <?php wp_footer(); ?>
 
 </body>

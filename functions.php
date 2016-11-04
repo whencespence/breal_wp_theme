@@ -49,7 +49,6 @@ of writing our own link tags in the header. */
 
 function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
-
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 }
 
@@ -280,4 +279,9 @@ function get_post_parent($post) {
 	else {
 		return $post->ID;
 	}
+}
+
+//advanced custom fields options plugin
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
 }
