@@ -14,6 +14,7 @@
 @import 'comments';
 @import 'footer';
 @import 'front-page';
+@import 'about-page';
 /*
 ====================================
 Default Styling
@@ -49,4 +50,7 @@ body {
 .wrapper{
 	max-width: 900px;
 	margin: 0 auto;
+}
+.main{
+	width: 100%;
 }

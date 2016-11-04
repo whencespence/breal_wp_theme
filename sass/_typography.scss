@@ -1,15 +1,10 @@
 h1,h2,h3,h4{
 	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
 }
-// h1{
-
-// }
-// h2{
-
-// }
-// h3{
-	
-// }
+h1,h2{
+	font-size: 1.9rem;
+}
 a {
 	color: #BA209B;
 	text-decoration: none;
@@ -23,9 +18,12 @@ a {
 p {
 	font-family: 'Open Sans', sans-serif;
 	color: #888888;
-	line-height: 1.5;
+	line-height: 1.4;
 }
-
+p.body_content{
+	font-size: 0.8rem;
+	text-align: justify;
+}
 /*blockquotes*/
 
 blockquote {

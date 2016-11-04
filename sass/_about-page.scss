@@ -1,0 +1,35 @@
+
+h2{
+	padding:90px 0 13px 0;
+}
+p.intro_sub{
+	font-family: 'Dosis', sans-serif;
+	font-size: 0.9rem;
+	width: 38%;
+}
+p.body_header{
+	font-size: 1.1rem;
+	text-align: justify;
+	font-weight: 400;
+	text-align: justify;
+	width: 58%;
+	padding: 70px 0 50px 0;
+}
+.about_container{
+	// justify-content: space-between;
+}
+.about_content{
+	width: 45%;
+}
+p.about_body_content{
+	font-size: 0.8rem;
+	text-align: justify;
+	line-height: 1.7;
+}
+.about_image {
+	position: relative;
+	right: -100px;
+	width: 100%;
+	padding-top: 5px;
+	overflow-x: hidden;
+}

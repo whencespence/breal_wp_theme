@@ -10,7 +10,9 @@
 		?>
 
 		<!-- company tagline -->
-		<p class="tagline"><?php the_field('tagline'); ?></p>
+		<div class="tagline">
+			<h1><?php the_field('tagline'); ?></h1>
+		</div>
 		
 </div> <!-- /.main-->
 
@@ -27,7 +29,7 @@
 						<div>
 							<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt']?>">
 						</div>
-						<p><?php echo $image['caption'] ?></p>
+						<p><?php echo $caption['caption'] ?></p>
 					</div>
 
 					<?php
