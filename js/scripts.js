@@ -9,14 +9,3 @@ $(function(){
 		$('body').css('background-color', 'lightgrey')
 	});
 });
-
-$('.home_carousel').flickity({
-	// options
-	contain: true,
-	imagesLoaded: true,
-	freeScroll: true,
-	wrapAround: true,
-	prevNextButtons: false,
-	pageDots: false,
-	lazyLoad: true,
-});

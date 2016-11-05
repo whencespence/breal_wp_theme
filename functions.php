@@ -71,6 +71,14 @@ function hackeryou_scripts() {
 
   wp_enqueue_script(
     'plugins', //handle
+    "https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js",
+    false, //dependencies
+    null, // version number
+    true //load in footer
+  );
+
+  wp_enqueue_script(
+    'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
     false, //dependencies
     null, // version number
@@ -285,3 +293,9 @@ function get_post_parent($post) {
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+
+//custom length for blog page excerpts
+function custom_excerpt_length( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

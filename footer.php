@@ -20,7 +20,7 @@
  s.parentNode.insertBefore(g,s)}(document,"script"));
 </script>
 <script src="<?php bloginfo('template_url') ?>/js/slideout.min.js"></script>
-<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>

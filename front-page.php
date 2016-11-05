@@ -3,20 +3,19 @@
 <div class="main wrapper">
 
 	<?php // Start the loop ?>
-
 		<?php
 			if( have_posts() )
 				while ( have_posts() ) : the_post();
 		?>
 
-		<!-- company tagline -->
-		<div class="tagline">
-			<h1><?php the_field('tagline'); ?></h1>
-		</div>
+	<!-- company tagline -->
+	<div class="tagline">
+		<h1><?php the_field('tagline'); ?></h1>
+	</div>
 		
 </div> <!-- /.main-->
 
-		<div class="home_carousel" data-flickity>
+		<div class="home_carousel" data-flickity='{"contain":true,"imagesLoaded":true,"freeScroll":true,"wrapAround": true,"prevNextButtons":false,"pageDots":false,"lazyLoad":true}'>
 		<!-- image carousel -->
 		<?php 
 			if( have_rows('home_carousel') ):
@@ -29,7 +28,7 @@
 						<div>
 							<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt']?>">
 						</div>
-						<p><?php echo $caption['caption'] ?></p>
+					<!-- 	<p><?php echo $caption['caption'] ?></p> -->
 					</div>
 
 					<?php

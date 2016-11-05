@@ -15,6 +15,7 @@
 @import 'footer';
 @import 'front-page';
 @import 'about-page';
+@import 'index';
 /*
 ====================================
 Default Styling
@@ -23,6 +24,8 @@ Default Styling
 
 img {
 	max-width: 100%;
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
 }
 
 body {
