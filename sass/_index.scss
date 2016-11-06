@@ -3,12 +3,21 @@
 	flex-wrap: wrap;
 	margin: 50px 0;
 		.post_item{
-			flex: 1 1 30%;
+			width: calc(32% - 40px);
 			flex-direction: column;
 			padding-bottom: 50px;
-				&:nth-child(odd),&:nth-child(even){
-					margin-right: calc(30% - 40px);
+				h3 {
+					padding-top: 20px;
+				}
+				p{
+					font-size: 0.8rem;
 				}
 		}
-		
+}
+.blog_menu ul{
+	list-style: none;
+	display: flex;
+		.fa{
+			transition: 0.3s all ease;
+		}
 }
