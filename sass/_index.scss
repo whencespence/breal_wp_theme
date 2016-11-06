@@ -6,18 +6,38 @@
 			width: calc(32% - 40px);
 			flex-direction: column;
 			padding-bottom: 50px;
-				h3 {
-					padding-top: 20px;
+				h3.post {
+					padding: 20px 0;
 				}
 				p{
-					font-size: 0.8rem;
+					font-size: 0.75rem;
+					padding-bottom: 5px;
 				}
 		}
+}
+.blog_menu{
+	align-items:baseline;
 }
 .blog_menu ul{
 	list-style: none;
 	display: flex;
+	padding: 0;
+	margin: 0;
+		li{
+			padding: 0;
+			margin: 0;
+			a{
+				padding: 0;
+				margin: 0;
+			}
+		}
 		.fa{
+			font-size: 1rem;
+			color: #bbb;
+			padding-right: 10px;
 			transition: 0.3s all ease;
+				&:hover, &:focus{
+					color: black;
+				}
 		}
 }

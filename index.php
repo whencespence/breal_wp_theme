@@ -14,13 +14,12 @@
 						<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail('medium'); ?></a>
 						<h3 class="post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt($length); ?>
-						<div class="blog_menu">
-							<p>Share :: </p>
-							<?php wp_nav_menu( array(
-          						'container' => false,
-          						'theme_location' => 'blog_menu'
-       						)); ?>
-						</div>
+							<div class="blog_menu">
+								<?php wp_nav_menu( array(
+	          						'container' => false,
+	          						'theme_location' => 'blog_menu'
+	       						)); ?>
+							</div>
 					</div>
 
 				<?php endwhile; ?>

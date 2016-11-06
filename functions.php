@@ -148,7 +148,7 @@ add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function hackeryou_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">Read more...</a>';
+	return ' <a href="'. get_permalink() . '">Read more.</a>';
 }
 
 /**
@@ -301,8 +301,3 @@ function custom_excerpt_length( $length ) {
 	return 10;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-//setting custom blog post image size
-// function the_post_thumbnail( $size = 'post-thumbnail', $attr = '' ) {
-// 	echo get_the_post_thumbnail( null, $size, $attr );
-// }
