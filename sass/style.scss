@@ -17,6 +17,7 @@
 @import 'about-page';
 @import 'index';
 @import 'contact-page';
+@import 'single';
 /*
 ====================================
 Default Styling
@@ -50,6 +51,6 @@ body {
 	max-width: 900px;
 	margin: 0 auto;
 }
-.main{
-	width: 100%;
-}
+// main{
+// 	// padding-top: 50px;
+// }

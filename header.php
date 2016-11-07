@@ -13,6 +13,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <header>
     <nav class="wrapper">
       <a href="<?php echo home_url( '/' ); ?>" rel="home">

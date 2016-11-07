@@ -12,7 +12,7 @@ get_header();  ?>
 	<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt']?>">
 </div>
 
-<mai class="main wrapper flex_container">
+<main class="wrapper flex_container">
 
 	<?php // Start the loop ?>
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -32,6 +32,6 @@ get_header();  ?>
 		</div>
 
 	<?php endwhile; // end the loop?>
-</div> <!-- /.main -->
+</main> <!-- /.main -->
 
 <?php get_footer(); ?>

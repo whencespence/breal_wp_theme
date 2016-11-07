@@ -1,13 +1,14 @@
 nav{
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
 	align-items:center;
 		p{
 			font-family: 'Dosis', sans-serif;
 			font-size: 1.3rem;
+			padding: 25px 0;
 			font-weight: 600;
 			color: black;
+			transition: 0.2s all ease;
 				&:hover, &:focus{
 					color: #cccccc;
 				}
@@ -17,8 +18,8 @@ nav{
 //nav toggle button
 .toggle_button {
   position: fixed;
-  top: 50px;
-  right:190px;
+  top: 45px;
+  right:130px;
   width: 20px;
   height: 20px;
   padding: 4px;
@@ -61,7 +62,7 @@ nav{
   opacity: 0;
 }
 .button_open .menu_bar_bottom {
-  transform: rotate(-45deg) translate(8px, -7px);
+  transform: rotate(-45deg) translate(8px, -8px);
   transition: .5s;
 }
 //end of nav toggle button

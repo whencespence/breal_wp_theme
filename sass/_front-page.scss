@@ -2,7 +2,15 @@
 	width: 45%;
 	padding:90px 0;
 }
+.carousel-cell{
+	position: relative;
+}
 .carousel-cell div {
+	position: relative;
 	width: 450px;
 	padding-right: 30px;
+	transition: 0.8s opacity;
+		&:focus,&:hover{
+			opacity: 0.8;
+		}
 }

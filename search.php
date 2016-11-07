@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="main">
+<main class="wrapper">
 	<div class="container">
 
 		<div class="content">
@@ -11,7 +11,7 @@
 			<?php else : ?>
 
 				<h2>Nothing Found</h2>
-				<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
+				<p>Sorry, nothing matched your search criteria. Please try again with some different keywords.</p>
 				<?php get_search_form(); ?>
 
 			<?php endif; ?>
@@ -20,6 +20,6 @@
 		<?php get_sidebar(); ?>
 
 	</div><!-- /.container -->
-</div> <!-- /.main -->
+</main> <!-- /.main -->
 
 <?php get_footer(); ?>

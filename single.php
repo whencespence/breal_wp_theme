@@ -1,40 +1,49 @@
 <?php get_header(); ?>
 
-<div class="main wrapper">
+<main class="wrapper">
+
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+        <h2><?php the_title(); ?></h2><!-- post title -->
 
-          <div class="entry-meta">
-            <?php hackeryou_posted_on(); ?>
-          </div><!-- .entry-meta -->
+        <div class="single flex_container">
 
-          <div class="entry-content">
-            <?php the_content(); ?>
-            <?php wp_link_pages(array(
-              'before' => '<div class="page-link"> Pages: ',
-              'after' => '</div>'
-            )); ?>
-          </div><!-- .entry-content -->
+          <!-- main column -->
+          <div class="column">
+            <div class="entry-content">
+              <div class="single_post_image">
+                  <img src="<?php the_post_thumbnail('medium'); ?>
+                </div>
+                <?php the_content(); ?>
+                <?php wp_link_pages(array(
+                  'before' => '<div class="page-link"> Pages: ',
+                  'after' => '</div>'
+                )); ?>
 
-          <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
-          </div><!-- .entry-utility -->
-        </div><!-- #post-## -->
+              <div class="entry-utility">
+                <?php hackeryou_posted_in(); ?>
+                <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+              </div><!-- .entry-utility -->
+            </div><!-- #post-## -->
 
-        <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
-        </div><!-- #nav-below -->
+            <div id="nav-below" class="navigation">
+              <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
+              <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
+            </div><!-- #nav-below -->
 
-        <?php comments_template( '', true ); ?>
+            <?php comments_template( '', true ); ?>
+  
+            <?php endwhile; // end of the loop. ?>
+          
+          </div><!-- end of column -->
 
-      <?php endwhile; // end of the loop. ?>
+          <?php get_sidebar(); ?><!-- this is the aside.sidebar -->
 
-    <?php get_sidebar(); ?>
+        </div><!-- end of flex_container -->
 
-</div> <!-- /.main -->
+  
+
+</main> <!-- /.main -->
 
 <?php get_footer(); ?>
