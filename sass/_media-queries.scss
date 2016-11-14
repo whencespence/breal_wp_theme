@@ -1,0 +1,42 @@
+///////////////FRONT PAGE//////////////////
+@media all and (max-width: 960px) {
+	.main.wrapper,nav.wrapper{
+		margin: 0 4%;
+	}
+	.toggle_button{
+		right: 50px;
+	}
+	footer{
+		margin: 0 4%;
+	}
+}
+@media all and (max-width: 786px) {
+	.tagline{
+		width: 80%;
+	}
+}
+@media all and (max-width: 480px) {
+	.menu-wrap{
+		width: 100%;
+	}
+	.tagline{
+		width: 100%;
+	}
+	h1{
+		font-size: 1.4rem;
+	}
+}
+
+//////////////ABOUT PAGE////////////////////
+@media all and (max-width: 960px) {
+
+}
+@media all and (max-width: 786px) {
+
+}
+@media all and (max-width: 480px) {
+
+}
+@media all and (max-width: 360px) {
+
+}
