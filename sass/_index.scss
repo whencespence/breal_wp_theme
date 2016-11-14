@@ -1,12 +1,14 @@
 .blog_container{
-	padding: 60px 0;
-	column-count: 3;
-	-webkit-column-count: 3;
-	column-gap: 0;
-	-webkit-column-gap: 0;
+	padding-top: 60px;
+	display:flex;
+	// column-count: 3;
+	// -webkit-column-count: 3;
+	// column-gap: 0;
+	// -webkit-column-gap: 0;
 		.post_item{
-			width: 90%;
-			break-inside: avoid;
+			width: 33%;
+			// width: 90%;
+			// break-inside: avoid;
 			flex-direction: column;
 			margin: 40px 0;
 				.post_image{

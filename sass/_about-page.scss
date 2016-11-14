@@ -3,7 +3,7 @@ h2{
 }
 p.intro_sub{
 	font-family: 'Dosis', sans-serif;
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 	width: 38%;
 }
 p.body_header{
@@ -12,36 +12,40 @@ p.body_header{
 	font-weight: 400;
 	text-align: justify;
 	width: 58%;
-	padding: 70px 0 50px 0;
+	padding: 70px 0 35px 0;
 }
-.about_container{
-	flex: 1 0 50%;
-}
-.about_image {
-	position: relative;
-	right: -80px;
-	width: 100%;
-	padding-top: 5px;
-	overflow-x: hidden;
-}
-.about_content{
+.about_container .about_content{
+	width: 50%;
 		p.about_body_content{
 			font-size: 0.8rem;
 			text-align: justify;
 			line-height: 1.7;
+			width: 45%;
 		}
 }
 .staff_container{
 	justify-content: space-between;
+	width: 50%;
 		.staff{
-			max-width: 150px;
-				p.staff_name{
-					font-family: 'Dosis', sans-serif;
-					color: black;
-					padding-top: 20px;
-					font-size: 0.9rem;
-					font-weight: 600;
+			width: 30%;
+				img{
+					height: 100%;
+					display: block;
+					width: 100%;
 				}
+			p.staff_name{
+				font-family: 'Dosis', sans-serif;
+				color: black;
+				padding-top: 11px;
+				font-size: 0.9rem;
+				font-weight: 600;
+			}
 		}
 }
 
+.outer_container{
+	
+		.about_image{
+			width: 60%;
+		}
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="main">
+<main class="wrapper">
 
       <h1>Category Archives: <?php single_cat_title(); ?></h1>
     	<?php
@@ -12,6 +12,6 @@
 
     <?php get_sidebar(); ?>
 
-</div> <!-- /.main -->
+</main> <!-- /.main -->
 
 <?php get_footer(); ?>

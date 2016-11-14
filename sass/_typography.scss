@@ -17,6 +17,12 @@ a {
 		color: #cccccc;
 	}
 }
+::selection {
+  background: rgba(174,198,207,0.5);
+}
+::-moz-selection {
+  background: rgba(174,198,207,0.5);
+}
 
 /* paragraphs */
 

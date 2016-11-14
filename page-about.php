@@ -14,24 +14,21 @@
 			<p class="body_header"><?php the_field('body_header'); ?></p>
 
 		<!-- about container -->
-			<div class="about_container flex_container">
+			<div class="about_container">
+
 				<div class="about_content">
 					<p class="about_body_content"><?php the_field('body_content'); ?></p>
-					<!-- staff section -->
+				</div>
+				
+				<div class="outer_container flex_container">
 					<div class="staff_container flex_container">
-						<?php
-							if( have_rows('staff_content') ):
-								while( have_rows('staff_content') ) : the_row();
-						?>
+						<?php if( have_rows('staff_content') ): while( have_rows('staff_content') ) : the_row(); ?>
 							<div class="staff">
 								<?php $image = get_sub_field('staff_image'); ?>
 								<img src="<?php echo $image['url'] ?>" class= "staff_image" alt="<?php echo $image['alt']?>">
 								<p class="staff_name"><?php the_sub_field('staff_name'); ?></p>
 							</div>
-						<?php
-							endwhile;
-								endif;
-						?>
+						<?php endwhile; endif; ?>
 					</div>
 					<div class="about_image">
 						<?php $image = get_field('about_image'); ?>
@@ -39,9 +36,9 @@
 					</div>
 				</div>
 
-
 			</div><!-- end of about_container -->
 		</div><!-- end of wrapper -->
+
      <?php endwhile; // end the loop?>
 
 </div> <!-- /.main -->

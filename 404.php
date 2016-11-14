@@ -1,13 +1,10 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<main class="wrapper">
 
-    <h1>Not Found</h1>
-    <p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
+    <h1>Sorry, the page you requested could not be found. Try searching!</h1>
     <?php get_search_form(); ?>
 
-  </div> <!-- /.container -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
