@@ -3,7 +3,7 @@
 <?php //index.php is the last resort template, if no other templates match ?>
 <?php get_header(); ?>
 
-<main class="wrapper">
+<main class="blog wrapper">
 		<?php $blog_title = get_field('blog_title', get_option('page_for_posts')); ?>
 		<?php echo $blog_title ?>
 		<?php $blog_intro = get_field('blog_introduction', get_option('page_for_posts')); ?>
@@ -15,7 +15,7 @@
 
 					<div class="post_item flex_container">
 						<div class="post_image">
-							<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail('medium'); ?></a>
+							<a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail('large'); ?></a>
 						</div>
 						<h3 class="post"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<?php the_excerpt($length); ?>

@@ -15,7 +15,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-    <nav class="wrapper">
+    <nav class="wrapper" role="navigation">
       <a href="<?php echo home_url( '/' ); ?>" rel="home">
         <p><?php the_field('header_logo', 'option'); ?></p>
       </a>

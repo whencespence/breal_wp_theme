@@ -1,16 +1,14 @@
-h2{
+.page_about h2{
 	padding:90px 0 13px 0;
 }
 p.intro_sub{
-	font-family: 'Dosis', sans-serif;
-	font-size: 0.95rem;
+	font-size: 0.8rem;
 	width: 38%;
 }
 p.body_header{
 	font-size: 1.1rem;
 	text-align: justify;
 	font-weight: 400;
-	text-align: justify;
 	width: 58%;
 	padding: 8% 0 4% 0;
 }
@@ -18,7 +16,6 @@ p.body_header{
 	justify-content:space-between;
 		.about_content{
 			width: 47%;
-			display: block;
 				p.about_body_content{
 					font-size: 0.8rem;
 					text-align: justify;
@@ -27,14 +24,17 @@ p.body_header{
 		}
 		.about_image{
 			width: 45%;
+			position: relative;
+			padding-top: 6px;
 				.inner_about_image{
-					width: 100%;
+					position: relative;
+					width: 128%;
+					margin-bottom: 90px;
 						img{
-							position: absolute;
-							// overflow: hidden;
+							width: 100%;
 							transition: 0.8s opacity;
 								&:focus,&:hover{
-									opacity: 0.8;
+									opacity: 0.85;
 								}
 						}
 				}
@@ -46,11 +46,9 @@ p.body_header{
 					justify-content: space-between;
 					width: 100%;
 						.staff{
-							height: 10vw;
 							width: 30%;
 								img{
-									height: 100%;
-									display: block;
+									height: 60%;
 									object-fit:cover;
 									width: 100%;
 									transition: 0.8s opacity;

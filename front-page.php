@@ -27,7 +27,6 @@
 					<div class="carousel-cell">
 						<div>
 							<img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt']?>">
-							<!-- <p class="carousel_overlay"><?php echo $caption['caption'] ?></p> -->
 						</div>
 						
 					</div>

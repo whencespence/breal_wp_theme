@@ -1,6 +1,5 @@
-</div>
-<footer>
-	<div class="contact wrapper">
+<footer class="wrapper">
+	<div class="contact">
 		<p class="company"><?php the_field('company_name', 'option'); ?></p>
 		<p><?php the_field('email_address', 'option'); ?></p>
 		<p><?php the_field('phone_number', 'option'); ?></p>

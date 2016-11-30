@@ -119,16 +119,6 @@ input[type=submit] {
 	color: #333333;
 }
 
-#respond {
-	margin-top: 24px;
-	border-top: 1px solid #e7e7e7;
-	overflow: hidden;
-	position: relative;
-	.comment-notes {
-		margin-bottom: 1em;
-	}
-}
-
 .form-allowed-tags {
 	line-height: 1em;
 }
@@ -166,6 +156,7 @@ h3#reply-title {
 	}
 	textarea {
 		width: 98%;
+		padding:10px;
 	}
 	dt {
 		color: #888888;
@@ -181,7 +172,7 @@ h3#reply-title {
 		}
 	}
 	.form-submit {
-		margin: 0 0 24px;
+		margin: 0;
 		input {
 			width: auto;
 			font-size: 14px;

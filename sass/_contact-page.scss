@@ -1,14 +1,60 @@
+main.contact{
+	justify-content:space-between;
+	margin: 50px auto 90px auto;
+		p{
+			font-size: 0.8rem;
+		}
+		h2{
+			padding-bottom:20px;
+		}
+}
 .contact_image{
+	position: relative;
 	padding-top: 90px;
 		img{
-			position: fixed;
 			background-size: cover;
 			opacity: 0.9;
-			height: 350px;
+			height: 300px;
 			width: 1280px;
 		}
 }
 .contact_container{
+	width: 20%;
 	justify-content:space-between;
-		
+		p{
+			line-height: 1.8;
+		}
+}
+.form_container{
+	width: 70%;
+		form {
+				input, textarea{
+					border:none;
+					background-color: #f6f6f6;
+					font-size: 0.8rem;
+					padding: 10px 15px;
+					outline:none !important;
+					border-radius: 2px;
+				}
+				.flexed{
+					display: flex;
+					justify-content:space-between;
+					flex:1;
+					font-size: 0;
+				}
+				input[name='your-subject'],textarea{
+					width: 100%;
+				}
+				input[type='submit']{
+					margin-top: 30px;
+				}
+		}
+}
+.contact_content,.social_content{
+	margin-bottom: 40px;
+}
+.social_content ul li{
+	list-style: none;
+	float:left;
+	padding: 30px 10px 0 0;
 }

@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<main class="main wrapper">
     <div class="content">
 
       <?php if ( have_posts() ) the_post(); ?>
 
-      <h1>
+      <h2>
         <?php if ( is_day() ) : ?>
           Daily Archives: <?php the_date(); ?>
         <?php elseif ( is_month() ) : ?>
@@ -16,7 +15,7 @@
         <?php else : ?>
           Blog Archives
         <?php endif; ?>
-      </h1>
+      </h2>
 
       <?php
     	/* Since we called the_post() above, we need to
@@ -33,10 +32,6 @@
       ?>
 
     </div><!--/content-->
-
-    <?php get_sidebar(); ?>
-
-  </div> <!-- /.container -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

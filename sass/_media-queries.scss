@@ -1,42 +1,138 @@
-///////////////FRONT PAGE//////////////////
 @media all and (max-width: 960px) {
-	.main.wrapper,nav.wrapper{
-		margin: 0 4%;
-	}
 	.toggle_button{
 		right: 50px;
 	}
-	footer{
-		margin: 0 4%;
+/////////////////// CONTACT ////////////////////
+	form .flexed{
+		flex-direction:column;
+			input{
+				width: 100%;
+			}
+			input[type='text']{
+				margin-bottom: 15px;
+			}
 	}
 }
 @media all and (max-width: 786px) {
+	.wrapper{
+		max-width: 85%;
+	}
+///////////////////// ABOUT ///////////////////
+	p.intro_sub{
+		width: 47%;
+	}
 	.tagline{
 		width: 80%;
 	}
-}
-@media all and (max-width: 480px) {
-	.menu-wrap{
+	p.body_header{
+		font-size: 1rem;
 		width: 100%;
+		padding: 10% 0;
 	}
-	.tagline{
+///////////////////// BLOG ///////////////////
+	.blog_container .post_item{
+		width: 45%;
+		margin: 15px 0;
+	}
+}
+
+@media all and (max-width: 600px) {
+	h1{
+		font-size: 1.6rem;
+	}
+//////////////////// ABOUT ////////////////////
+	.page_about h2{
+		padding: 60px 0 20px 0;
+	}
+	.about_image{
+		display: none;
+	}
+	.about_container .about_content, .about_container .about_content p.about_body_content, p.body_header,p.intro_sub{
 		width: 100%;
+		text-align: left;
+	}
+	.toggle_button{
+		position: absolute;
+		right:25px;
+	}
+	.staff_container{
+		padding:10% 0 20% 0;
+	}
+	.about_container .inner_container.flex_container .staff_container .staff img{
+		height: 70%;
+	}
+/////////////////// SINGLE ///////////////////
+	.single{
+		flex-direction:column;
+			div.column,aside.sidebar{
+				width: 100%;
+				margin: 0;
+			}
+			h2{
+				margin: 90px 0 50px 0;
+			}
+			aside.sidebar{
+				margin: 30px 0;
+			}
+	}
+}
+
+@media all and (max-width: 480px) {
+	.tagline{
+		width: 90%;
+	}
+	.carousel-cell div{
+		width: 275px;
+		height: 200px;
+	}
+	.menu-wrap,.menu_show{
+		width: 100%;
+		opacity: 0.95;
 	}
 	h1{
 		font-size: 1.4rem;
 	}
-}
-
-//////////////ABOUT PAGE////////////////////
-@media all and (max-width: 960px) {
-
-}
-@media all and (max-width: 786px) {
-
-}
-@media all and (max-width: 480px) {
-
-}
-@media all and (max-width: 360px) {
-
+	ul.menu{
+		height: 90vh;
+		padding:10vh 0 0 0;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+			li{
+				text-align: center;
+				padding:0;
+			}
+	}
+//////////////////// BLOG ///////////////////
+	.blog_container .post_item{
+		width: 100%;
+		margin: 25px 0;
+			ul.menu{
+				height: auto;
+				flex-direction:row;
+				justify-content:left;
+			}
+	}
+	main.blog h2{
+		padding: 60px 0 20px 0;
+	}
+//////////////////// CONTACT ///////////////////
+	main.contact{
+		flex-direction: column;
+			.form_container,.contact_container{
+				width: 100%;
+			}
+			.form_container{
+				margin-top: 50px;
+			}
+			.contact_container .contact_content,.social_content{
+				margin-bottom: 25px;
+			}
+			form.p.form_submit{
+				margin:0;
+			}
+	}
+	.category h2{
+		margin:60px 0 20px 0;
+	}
 }

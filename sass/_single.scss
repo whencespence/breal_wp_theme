@@ -1,7 +1,7 @@
 .single{
 	justify-content:space-between;
 		.column{
-			margin-top: 50px;
+			margin: 50px 0 90px 0;
 			width: 70%;
 		}
 		aside.sidebar{
@@ -18,10 +18,10 @@
 							padding: 10px 0;
 								li.cat-item{
 									text-align: left;
-									display: inline-block;
+									display: block;
 									font-size: 0.85rem;
 									color: #888;
-									padding: 5px 0;
+									padding:5px 0 0 0;
 										a{
 											font-size: 0.85rem;
 											transition: 0.2s all ease;
@@ -41,8 +41,8 @@ h2.entry-title{
 .single_post_image{
 	max-width: 100%;
 		img{
+			object-fit:cover;
 			width: 100%;
-			height: 100%;
 		}
 }
 .entry-content blockquote {
@@ -82,27 +82,6 @@ h2.entry-title{
 h2.comments-title{
 	padding-top: 30px;
 }
-// #nav-below{
-// 	position: relative;
-// 		p.nav-previous a{
-// 			font-family: 'Dosis', sans-serif;
-// 			position: absolute;
-// 			content: '';
-// 			top: 50%;
-// 			right: 0;
-// 			left: -100px;
-// 			bottom: 0;
-// 			color: #ccc;
-// 			text-transform: uppercase;
-// 		}
-// 		p.nav-next a{
-// 			color: #ccc;
-// 			font-family: 'Dosis', sans-serif;
-// 			position: absolute;
-// 			text-transform: uppercase;
-// 			content: '';
-// 		}
-// }
 
 //comments styles//////////////////////////
 .logged-in-as{
@@ -140,19 +119,22 @@ article#div-comment-2.comment-body{
 		margin: 20px 0;
 		background-color: #f6f6f6;
 		border: none;
+		outline:none !important;
 		border-radius: 2px;
 	}
-	input#submit.submit{
-		border: 1px solid #bbb;
-		padding: 8px 10px;
-		color: black;
-		background-color: transparent;
-		text-transform: uppercase;
-		font-weight: 600;
-		font-family: 'Dosis', sans-serif;
-		transition: 0.2s all ease;
-			&:hover,&:focus{
-				background-color: #ccc;
-			}
-	}
+
+}
+input[type=submit]{
+	border: 1px solid #bbb;
+	padding: 8px 10px;
+	color: black;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: 'Dosis', sans-serif;
+	transition: 0.2s all ease;
+		&:hover,&:focus{
+			background-color: #ccc;
+		}
 }

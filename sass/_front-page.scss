@@ -2,11 +2,10 @@
 	width: 45%;
 	padding:90px 0;
 }
-.carousel-cell{
-	position: relative;
+.home_carousel{
+	padding-bottom: 90px;
 }
 .carousel-cell div {
-	position: relative;
 	width: 400px;
 	height: 280px;
 	padding-right: 30px;
@@ -14,4 +13,8 @@
 		&:focus,&:hover{
 			opacity: 0.8;
 		}
+	img{
+		object-fit:cover;
+		height: 100%;
+	}
 }

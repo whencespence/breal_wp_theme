@@ -93,6 +93,9 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+	wp_enqueue_script(
+		'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
@@ -139,7 +142,7 @@ add_filter( 'wp_page_menu_args', 'hackeryou_page_menu_args' );
  * Sets the post excerpt length to 40 characters.
  */
 function hackeryou_excerpt_length( $length ) {
-	return 40;
+	return 15;
 }
 add_filter( 'excerpt_length', 'hackeryou_excerpt_length' );
 
@@ -302,9 +305,8 @@ function get_post_parent($post) {
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
-
-//custom length for blog page excerpts
-function custom_excerpt_length( $length ) {
-	return 10;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+// //custom length for blog page excerpts
+// function custom_excerpt_length( $length ) {
+// 	return 10;
+// }
+// add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
