@@ -152,7 +152,7 @@ h3#reply-title {
 	}
 	input {
 		width: 98%;
-		margin: 0 0 9px;
+		margin: 5px 0 5px;
 	}
 	textarea {
 		width: 98%;
@@ -215,4 +215,5 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
 	margin: 0;
+	padding: 0 2px;
 }

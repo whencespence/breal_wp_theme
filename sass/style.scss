@@ -28,10 +28,8 @@ img {
 	-webkit-filter: grayscale(1);
 	filter: grayscale(1);
 }
-
 body {
 	width: 100%;
-	max-width: 1280px;
 	margin:0 auto;
 }
 .content {
@@ -46,8 +44,10 @@ body {
 	display: flex;
 }
 .wrapper{
-	width: 1000px;
-	max-width: 90%;
+	// width: 1000px;
+	width: 90%;
+	// max-width: 90%;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 .main{
